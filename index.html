@@ -3,12 +3,17 @@
 <style>
     body
     {
-        background-color: blanchedalmond;
+        background-color: white;
     }
     .flex-container
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .search-box
+    {
+        border-spacing: 50px;
     }
 </style>
 
@@ -18,10 +23,12 @@
     </header>
 
     <body class="flex-container">
-        <img class="googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <input class="searchbox" type="text">
-        <button class="searchbutton" type="submit">Google Search</button>
-        <button class="luckybutton" type="submit">I'm Feeling Lucky</button>
+        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <input class="search-box" type="text">
+        <div class="button-box">
+            <button class="search-button" type="submit">Google Search</button>
+            <button class="lucky-button" type="submit">I'm Feeling Lucky</button>
+        </div>
     </body>
 
     <footer>
