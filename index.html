@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 
 <style>
-    body
+    #header
     {
-        background-color: white;
+        background-color: transparent;
+        /* display: flex;
+        flex-direction: row; */
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
-    .flex-container
+    #body
     {
+        background-color: transparent;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .search-box
+    #footer
+    {
+        background-color: rgba(211, 211, 211, 0.2);
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    #search-box
     {
         border-spacing: 50px;
     }
 </style>
 
 <html>
-    <header>
-
+    <header id="header">
+        <a>About</a>
+        <a>Store</a>
+        <a>Gmail</a>
+        <a>Images</a>
+        <button id="products"></button>
+        <button id="sign-in">Sign In</button>
     </header>
 
-    <body class="flex-container">
-        <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <input class="search-box" type="text">
-        <div class="button-box">
-            <button class="search-button" type="submit">Google Search</button>
-            <button class="lucky-button" type="submit">I'm Feeling Lucky</button>
+    <body id="body">
+        <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <input id="search-box" type="text">
+        <div id="button-box">
+            <button id="search-button" type="submit">Google Search</button>
+            <button id="lucky-button" type="submit">I'm Feeling Lucky</button>
         </div>
     </body>
 
-    <footer>
-
+    <footer id="footer">
+        <a>Advertising</a>
+        <a>Business</a>
+        <a>How Search Works</a>
+        <a>Privacy</a>
+        <a>Terms</a>
+        <a>Settings</a>
     </footer>
 </html>
