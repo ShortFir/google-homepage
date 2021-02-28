@@ -5,7 +5,7 @@
     {
         text-decoration: none;
         color: #404040;
-        font-size: 14px;
+        font-size: 13px;
     }
     a:hover
     {
@@ -32,11 +32,19 @@
     #body
     {
         background-color: #ffffff;
-        height: 60vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #google-search
+    {
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
     #footer
     {
@@ -44,10 +52,16 @@
         position: fixed;
         bottom: 0;
         width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    #footer-list
+    {
+        width: 95vw;
     }
     #search-box
     {
-        width: 50vw;
+        width: 500px;
     }
     #products
     {
@@ -58,7 +72,7 @@
     #products:hover
     {
         border-style: none;
-        border-radius: 40%;
+        border-radius: 50%;
         background-color: #e0e0e0;
     }
     #sign-in
@@ -67,14 +81,14 @@
         color: #ffffff;
         border-color: #1a73e8;
         border-style: solid;
-        padding: 10px 25px 10px 25px;
+        padding: 8px 25px 8px 25px;
         border-radius: 5px;
     }
     #sign-in:hover
     {
-        border-color: lightblue;
+        background-color: #1a73ff;
     }
-    #search-button
+    .search-button
     {
         background-color: #f8f9fa;
         border-color: #f8f9fa;
@@ -82,19 +96,7 @@
         padding: 10px 20px 10px 20px;
         border-radius: 5px;
     }
-    #search-button:hover
-    {
-        border-color: #e0e0e0;
-    }
-    #lucky-button
-    {
-        background-color: #f8f9fa;
-        border-color: #f8f9fa;
-        border-style: solid;
-        padding: 10px 20px 10px 20px;
-        border-radius: 5px;
-    }
-    #lucky-button:hover
+    .search-button:hover
     {
         border-color: #e0e0e0;
     }
@@ -106,7 +108,6 @@
             <li><a href="#About">About</a></li>
             <li><a href="#Store">Store</a></li>
             <li style="float:right"><button id="sign-in">Sign in</button></li>
-            <!-- <li style="float:right"><button id="products"></button></li> -->
             <li style="float:right"><img id="products" src="google-products-icon.jpeg"></li>
             <li style="float:right"><a href="#Images">Images</a></li>
             <li style="float:right"><a href="#Gmail">Gmail</a></li>
@@ -114,22 +115,26 @@
     </header>
 
     <body id="body">
-        <img src="googlelogo_color_272x92dp.png">
-        <input id="search-box" type="text">
-        <div id="button-box">
-            <button id="search-button" type="submit">Google Search</button>
-            <button id="lucky-button" type="submit">I'm Feeling Lucky</button>
+        <div id="google-search">
+            <img src="googlelogo_color_272x92dp.png">
+            <input id="search-box" type="text">
+            <div id="button-box">
+                <button class="search-button" type="submit">Google Search</button>
+                <button class="search-button" type="submit">I'm Feeling Lucky</button>
+            </div>
         </div>
     </body>
 
     <footer id="footer">
-        <ul>
-            <li><a href="#Advertising">Advertising</a></li>
-            <li><a href="#Business">Business</a></li>
-            <li><a href="#How Search Works">How Search Works</a></li>
-            <li style="float:right"><a href="#Settings">Settings</a></li>
-            <li style="float:right"><a href="#Terms">Terms</a></li>
-            <li style="float:right"><a href="#Privacy">Privacy</a></li>
-        </ul>
+        <div id="footer-list">
+            <ul>
+                <li><a href="#Advertising">Advertising</a></li>
+                <li><a href="#Business">Business</a></li>
+                <li><a href="#How Search Works">How Search Works</a></li>
+                <li style="float:right"><a href="#Settings">Settings</a></li>
+                <li style="float:right"><a href="#Terms">Terms</a></li>
+                <li style="float:right"><a href="#Privacy">Privacy</a></li>
+            </ul>
+        </div>
     </footer>
 </html>
